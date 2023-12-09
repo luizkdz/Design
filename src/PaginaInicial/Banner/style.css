@@ -1,0 +1,30 @@
+.componente-banner{
+    display:flex;
+}
+
+.texto-banner{
+    margin-left:10px;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+}
+
+.texto-banner h2, p, span{
+    color:#022144;
+}
+
+
+.background-foto-banner{
+    width:50%;
+    background-color:#252525;
+}
+.background-dark{
+    display:flex;
+    background-color:#252525;
+}
+.background-white{
+    display:flex;
+    background-color:white;
+}

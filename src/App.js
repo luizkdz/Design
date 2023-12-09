@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Topo from '../src/PaginaInicial/Topo/index.js';
+import Banner from '../src/PaginaInicial/Banner/index.js';
+import ExperienciaDeTrabalho from '../src/PaginaInicial/ExperienciasDeTrabalho/index.js';
+import Rodape from '../src/PaginaInicial/Rodape/index.js';
+import {useState} from 'react';
 
 function App() {
+  const [ehTemaEscuro, setEhTemaEscuro] = useState(false);
+  const alterarTema = () => {
+
+    const cabecalho = document.querySelector('.cabecalho');
+    cabecalho.style.backgroundColor = ehTemaEscuro ? 'white' : 'black';
+    const backgroundFotoBanner = document.querySelector('.background-foto-banner');
+    backgroundFotoBanner.style.backgroundColor = ehTemaEscuro ? 'white' : 'black'; 
+    const backGroundExperienciasTrabalho = document.querySelector('.secao-experiencia');
+    backGroundExperienciasTrabalho.style.backgroundColor = ehTemaEscuro ? 'white' : 'black';
+    const backGroundRodape = document.querySelector('.grupo-rodape');
+    backGroundRodape.style.backgroundColor = ehTemaEscuro ? 'white' : 'black';
+    setEhTemaEscuro(!ehTemaEscuro);
+}
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topo alterarTema = {alterarTema}/>
+      <Banner alterarTema = {alterarTema}/>
+      <ExperienciaDeTrabalho/>
+      <Rodape/>
     </div>
   );
 }

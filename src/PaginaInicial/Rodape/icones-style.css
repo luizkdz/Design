@@ -1,0 +1,13 @@
+.circulo-icone{
+    margin:10px;
+    width:50px;
+    border-radius:50px;
+}
+
+.circulo-icone img{
+    width:50px;
+}
+
+.texto-amarelo{
+    color:yellow;
+}

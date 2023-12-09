@@ -1,0 +1,15 @@
+.container-links{
+    display:flex;
+}
+
+.grupo-rodape{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction:column;
+}
+
+.grupo-rodape img{
+    
+    width:100px;
+}
