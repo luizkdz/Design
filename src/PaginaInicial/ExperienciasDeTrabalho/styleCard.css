@@ -1,11 +1,54 @@
 .card-trabalho{
-    padding:20px;
-    border:2px solid #d9bdbd;
+    padding:40px;
+    border:1px solid #edecec;
     width:350px;
 }
 
+.card-trabalho h1,.card-trabalho p {  
+    text-align: start;
+}
+.card-trabalho:hover{background-color:#feb633}
 
+.card-trabalho h1{
+    color:white;
+}
 .data{
-    color:grey;
+    color:#9F9F9F;
     padding-top:20px;
+}
+
+.paragrafo-card{
+    color:#8a8fa3;
+}
+
+@media (max-width:375px){
+    .card-trabalho{
+        width:150px;
+    }
+}
+@media(min-width:375px) and (max-width:768px){
+    .card-trabalho{
+        width:200px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    .card-trabalho{
+        width:200px;
+        height:300px;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1444px){
+    .card-trabalho{
+        width:200px;
+        height:300px;
+    }
+}
+
+@media(min-width:1444px) and (max-width:1920px){
+    .card-trabalho{
+        width:300px;
+        height:300px;
+    }
 }

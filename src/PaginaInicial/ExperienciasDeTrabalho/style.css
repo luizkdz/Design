@@ -2,19 +2,42 @@
     justify-content: center;
     align-items: center;
     display:flex;
+
 }
 .secao-experiencia{
-    background-color:black;
+    background-color:#393838;
     text-align:center;
     justify-content:center;
-    margin:40px;
+    padding:40px;
+    
+}
+
+.secao-experiencia h2{
+    color:#CCCCCC;
+}
+.secao-experiencia p{
+    color:#CCCCCC;
 }
 
 .titulo-experiencia{
+    font-size: 45px;
+    font-weight: 700;
     border-bottom:2px solid green;
 }
 
 .descricao-experiencia-trabalho{
+    color:#8a8fa3;
     margin:40px;
+}
+
+
+@media (max-width:768px){
+    .container-cards{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+
+    }
+   
 }
 

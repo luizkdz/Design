@@ -7,7 +7,7 @@ export default function CardTrabalho(props) {
         <p className = "data">{props.data}</p>
         <h1>{props.titulo}</h1>
         <p>{props.empresa}</p>
-        <p>{props.paragrafo}</p>
+        <p class = "paragrafo-card">{props.paragrafo}</p>
       </div>
     );
   }

@@ -9,5 +9,11 @@
 }
 
 .texto-amarelo{
-    color:yellow;
+    color:#feb633;
+}
+
+@media (max-width:376px){
+    .circulo-icone img{
+        width:35px;
+    }
 }

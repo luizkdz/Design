@@ -4,11 +4,11 @@ import {useState} from 'react';
 import './style.css';
 import CardTrabalho from './cardTrabalho';
 
-export default function ExperienciaDeTrabalho(){
+export default function ExperienciaDeTrabalho(props){
     return(
         <div className = "secao-experiencia">
             <div className="titulo-experiencia"><h2>Experiências De Trabalho</h2></div>
-            <p class = "descricao-experiencia-trabalho">Há mais de 10 anos no mercado de Branding, Desing Gráfico, Criação de
+            <p class = "descricao-experiencia-trabalho">Há mais de 10 anos no mercado de Branding, Design Gráfico, Criação de
           Sites e Marketing<br/> Digital, nos empenhamos diariamente para entregar
           resultados que tragam impacto aos<br/> nossos clientes.</p>
         <div className = "container-cards">

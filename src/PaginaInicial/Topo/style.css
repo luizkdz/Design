@@ -1,27 +1,24 @@
 .cabecalho{
+    background-color:#252525;
     display:flex;
     justify-content: space-between;
 }
-*{
-    font-family:'Poppins, sans-serif';
-    margin:0;
-    padding:0;
-}
-
-.cabecalho img{
-    height:50px;
-    width:60px;
-}
 
 .cabecalho .logo{
-    margin-left:10px;
+    height:35px;
+    width:50px;
+    margin:15px;
 }
 .cabecalho .botao-clicar{
     margin-right:10px;
+    margin-top:10px;
 }
 
-.botao-clicar{
-    border: 1px solid black;
+
+.btn-icone{
+    border: 1px solid #747272;
     border-radius:50px;
     padding:2px;
+  width: 25px;
+  height: 25px;
 }

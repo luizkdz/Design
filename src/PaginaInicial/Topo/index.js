@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../assetsDesign/logo.png';
 import Moon from '../../assetsDesign/moon.png';
 import Sun from '../../assetsDesign/sun.png';
-import {useState} from 'react';
 import './style.css';
 
+export default function Topo(props) {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-export default function Topo(props){
-    
-    const [ehTemaEscuro, setEhTemaEscuro] = useState(false);
-    return(
-    <div className={ehTemaEscuro ? 'modo-escuro': 'modo-claro'}>
-    <div className= "cabecalho">
-            <img className="logo" src = {Logo} alt = "logo"/><div class = "botao-clicar" onClick={props.alterarTema}><div class = "imagem-texto"><img className = "btn-icone" src = {ehTemaEscuro ? Moon : Sun} alt = "icone"/>
-    </div> </div>
+  return (
+    <div className={isDarkTheme ? 'modo-escuro' : 'modo-claro'}>
+      <div className="cabecalho">
+        <img className="logo" src={Logo} alt="Logo" />
+        <div className="botao-clicar" onClick={() => { props.alterarTema(); setIsDarkTheme(!isDarkTheme);}}>
+          <div className="imagem-texto">
+            <img className="btn-icone" src={isDarkTheme ? Moon : Sun} alt="Toggle Icon" />
+            
           </div>
-          </div>
-)
+        </div>
+      </div>
+    </div>
+  );
 }

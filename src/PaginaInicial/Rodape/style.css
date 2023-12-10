@@ -3,13 +3,25 @@
 }
 
 .grupo-rodape{
+    background-color:#252525;
+    padding-top:50px;
     align-items: center;
     justify-content: center;
     display:flex;
     flex-direction:column;
 }
 
-.grupo-rodape img{
-    
-    width:100px;
+.grupo-rodape p{
+    color:#9F9F9F;
+    padding:20px;
+}
+
+.logo-rodape{
+    width:50px;
+    height:35px;
+}
+@media (max-width:376px){
+    .container-links{
+        width:300px;
+    }
 }

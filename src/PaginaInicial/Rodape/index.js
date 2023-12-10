@@ -13,9 +13,9 @@ import Icones from '../Rodape/icones.js';
 export default function Rodape(){
     return(
         <div class = "grupo-rodape">
-            <img src = {ImagemLogo}/>
-            <p>Ajudamos a criar uma personalidade digital construindo sua marca no ambiente online utilizando estratégias,
-        ferramentas e tecnologias personalizadas.</p>
+            <img className = "logo-rodape" src = {ImagemLogo}/>
+            <p>Ajudamos a criar uma personalidade digital construindo sua marca<br/> no ambiente online utilizando estratégias,
+        ferramentas<br/> e tecnologias personalizadas.</p>
             <div className = "container-links">
                 <Icones icone = {logoFacebook}/>
                 <Icones icone = {logoTwitter}/>
