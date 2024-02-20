@@ -31,10 +31,9 @@
 }
 
 
-@media (max-width:768px){
+@media (max-width:968px){
     .container-cards{
         display:flex;
-        flex-direction: column;
         flex-wrap:wrap;
 
     }
